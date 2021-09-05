@@ -1,13 +1,21 @@
+// helper function to set default image, description and date
+
 window.initialise = function () {
   document.getElementById('date').valueAsDate = new Date()
   window.getInfo('home')
   window.resizeImg()
 }
 
+
+// dynamic image size with viewport size
+
 window.resizeImg = function () {
   const width = window.innerWidth * 0.6
   document.getElementsByTagName('img')[0].setAttribute('width', width.toString())
 }
+
+
+// text disappearing effect for form submission
 
 window.Element.prototype.reduceToNothing = function () {
   const intervalId = setInterval(() => {
@@ -16,10 +24,16 @@ window.Element.prototype.reduceToNothing = function () {
   }, 50)
 }
 
+
+// add event listeners and bind callbacks, resize => resizeImg, load => main code (define html-referenced functions)
+
 window.addEventListener('resize', resizeImg, true)
 
 window.addEventListener('DOMContentLoaded', () => {
   // define all the functions used by inline script on the onclick and onload html attributes
+
+  // used to emulate the links on nav
+
   this.getInfo = function (loc) {
     document.getElementById('points').innerHTML = ''
   
@@ -41,7 +55,10 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('wikilink').innerText = info[loc].title
   }
 
-  this.uploadAlumni = function () {
+
+  // upload the user's story, could ajax to server and have separate page with people's experiences
+
+  this.uploadStory = function () {
     document.getElementById('story').reduceToNothing()
     document.getElementById('name').reduceToNothing()
     document.getElementById('surname').reduceToNothing()
@@ -54,8 +71,12 @@ window.addEventListener('DOMContentLoaded', () => {
     }, 2500)
   }
 
+
+  // upload email to mailing list, currently no validation
+  // TODO: validate email before accepting/animating
+
   this.addToMailingList = function () {
-    reduceToNothing(document.getElementById('email'))
+    document.getElementById('email').reduceToNothing()
     document.getElementById('mailsubmit').setAttribute('value', "you're on the list!")
     setTimeout(() => {
       document.getElementById('mailsubmit').setAttribute('value', "send me stuff!")
