@@ -1,4 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('date').valueAsDate = new Date()
+
   this.getInfo = function (loc) {
     document.getElementById('points').innerHTML = ''
   
@@ -29,6 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
     reduceToNothing(document.getElementById('story'))
     reduceToNothing(document.getElementById('name'))
     reduceToNothing(document.getElementById('surname'))
+    document.getElementById('date').valueAsDate = new Date()
 
     document.getElementById('experiencesubmit').setAttribute('value', "thanks for the story!")
     setTimeout(() => {

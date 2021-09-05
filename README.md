@@ -2,7 +2,7 @@
 
 ## topic: the seven new wonders of the world
 
-Created with vanilla Javascript { makes for a change ;) }, HTML5 and CSS3 (will run in IE10+), with super-simple tab interface for the different wonders
+Created with vanilla Javascript { makes for a change ;) }, HTML5 and CSS3 (will run in IE10+), with super-simple tab interface for the different wonders  
 All information about the tabs (ie title, info, list of facts, link to [wikipedia](https://www.wikipedia.org) etc.) is in js/info.js
 
 
