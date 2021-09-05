@@ -1,13 +1,13 @@
 const info = {
   home: {
-    img: 'assets/world.jpg',
+    img: 'assets/world.png',
     title: 'the seven wonders',
     info: `<p>This project is a very simple website using html5, css3 and vanilla javascript (~ES5), it contains information about the seven modern wonders of the world, and different showcases fo how to use specific html tags, css attributes and javascript selectors</p><br><p>A one day project created by <a href="https://github.com/lewardo">@lewardo</a></p>`,
     points: [],
     moreinfo: 'https://en.wikipedia.org/wiki/New7Wonders_of_the_World',
   },
   tm: {
-    img: 'assets/tajmahal.jpg',
+    img: 'assets/tajmahal.png',
     title: 'the taj mahal',
     info: `<p>The Taj Mahal (/ˌtɑːdʒ məˈhɑːl, ˌtɑːʒ-/; lit. 'Crown of the Palace', [taːdʒ ˈmɛːɦ(ə)l]), is an ivory-white marble mausoleum on the southern bank of the river Yamuna in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor Shah Jahan (reigned from 1628 to 1658) to house the tomb of his favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself. The tomb is the centrepiece of a 17-hectare (42-acre) complex, which includes a mosque and a guest house, and is set in formal gardens bounded on three sides by a crenellated wall. </p>`,
     points: [
@@ -18,7 +18,7 @@ const info = {
     moreinfo: 'https://en.wikipedia.org/wiki/Taj_Mahal',
   },
   col: {
-    img: 'assets/colosseum.jpg',
+    img: 'assets/colosseum.png',
     title: 'the colosseum',
     info: `<p>The Colosseum (/ˌkɒləˈsiːəm/ KOL-ə-SEE-əm; Italian: Colosseo [kolosˈsɛːo]) is an oval amphitheatre in the centre of the city of Rome, Italy, just east of the Roman Forum. It is the largest ancient amphitheatre ever built, and is still the largest standing amphitheatre in the world today, despite its age. Construction began under the emperor Vespasian (r. 69–79 AD) in 72 and was completed in 80 AD under his successor and heir, Titus (r. 79–81). Further modifications were made during the reign of Domitian (r. 81–96). The three emperors that were patrons of the work are known as the Flavian dynasty, and the amphitheatre was named the Flavian Amphitheatre (Latin: Amphitheatrum Flavium; Italian: Anfiteatro Flavio [aɱfiteˈaːtro ˈflaːvjo]) by later classicists and archaeologists for its association with their family name (Flavius). </p>`,
     points: [
@@ -29,7 +29,7 @@ const info = {
     moreinfo: 'https://en.wikipedia.org/wiki/Colosseum',
   },
   mp: {
-    img: 'assets/machupicchu.jpg',
+    img: 'assets/machupicchu.png',
     title: 'mach picchu',
     info: `<p>Machu Picchu is a 15th-century Inca citadel, located in the Eastern Cordillera of southern Peru, on a 2,430-meter (7,970 ft) mountain ridge. It is located in the Machupicchu District within Urubamba Province above the Sacred Valley, which is 80 kilometers (50 mi) northwest of Cuzco. The Urubamba River flows past it, cutting through the Cordillera and creating a canyon with a tropical mountain climate.</p>`,
     points: [
@@ -40,7 +40,7 @@ const info = {
     moreinfo: 'https://en.wikipedia.org/wiki/Machu_Picchu',
   },
   ctr: {
-    img: 'assets/christredeemer.jpg',
+    img: 'assets/christredeemer.png',
     title: 'christ the redeemer',
     info: `<p>Christ the Redeemer (Portuguese: Cristo Redentor, standard Brazilian Portuguese: [ˈkɾistu ʁedẽˈtoʁ], local pronunciation: [ˈkɾiɕtŭ̥ xe̞dẽˈtoɦ]) is an Art Deco statue of Jesus Christ in Rio de Janeiro, Brazil, created by French sculptor Paul Landowski and built by Brazilian engineer Heitor da Silva Costa, in collaboration with French engineer Albert Caquot. Romanian sculptor Gheorghe Leonida fashioned the face. Constructed between 1922 and 1931, the statue is 30 metres (98 ft) high, excluding its 8-metre (26 ft) pedestal. The arms stretch 28 metres (92 ft) wide. </p>`,
     points: [
@@ -51,7 +51,7 @@ const info = {
     moreinfo: 'https://en.wikipedia.org/wiki/Christ_the_Redeemer_(statue)',
   },
   ci: {
-    img: 'assets/chichenitza.jpg',
+    img: 'assets/chichenitza.png',
     title: 'chichen itza',
     info: `<p>Chichen Itza was a large pre-Columbian city built by the Maya people of the Terminal Classic period. The archeological site is located in Tinúm Municipality, Yucatán State, Mexico.<br>Chichen Itza was a major focal point in the Northern Maya Lowlands from the Late Classic (c. AD 600–900) through the Terminal Classic (c. AD 800–900) and into the early portion of the Postclassic period (c. AD 900–1200). The site exhibits a multitude of architectural styles, reminiscent of styles seen in central Mexico and of the Puuc and Chenes styles of the Northern Maya lowlands. The presence of central Mexican styles was once thought to have been representative of direct migration or even conquest from central Mexico, but most contemporary interpretations view the presence of these non-Maya styles more as the result of cultural diffusion. </p>`,
     points: [
@@ -62,7 +62,7 @@ const info = {
     moreinfo: 'https://en.wikipedia.org/wiki/Chichen_Itza',
   },
   pet: {
-    img: 'assets/petra.jpg',
+    img: 'assets/petra.png',
     title: 'petra',
     info: `<p>Petra (Arabic: ٱلْبَتْرَاء‎, romanized: Al-Batrāʾ; Ancient Greek: Πέτρα, "Rock"), originally known to its inhabitants as Raqmu or Raqēmō, is a historic and archaeological city in southern Jordan. It is adjacent to the mountain of Jabal Al-Madbah, in a basin surrounded by mountains forming the eastern flank of the Arabah valley running from the Dead Sea to the Gulf of Aqaba. The area around Petra has been inhabited from as early as 7000 BC, and the Nabataeans might have settled in what would become the capital city of their kingdom, as early as the 4th century BC. Archaeological work has only discovered evidence of Nabataean presence dating back to the second century BC, by which time Petra had become their capital. The Nabataeans were nomadic Arabs who invested in Petra's proximity to the incense trade routes by establishing it as a major regional trading hub. </p>`,
     points: [
@@ -73,7 +73,7 @@ const info = {
     moreinfo: 'https://en.wikipedia.org/wiki/Petra',
   },
   gwc: {
-    img: 'assets/greatwall.jpg',
+    img: 'assets/greatwall.png',
     title: 'the great wall of china',
     info: `<p>The Great Wall of China (traditional Chinese: 萬里長城; simplified Chinese: 万里长城; pinyin: Wànlǐ Chángchéng) is a series of fortifications that were built across the historical northern borders of ancient Chinese states and Imperial China as protection against various nomadic groups from the Eurasian Steppe. Several walls were built from as early as the 7th century BC, with selective stretches later joined together by Qin Shi Huang (220–206 BC), the first emperor of China. Little of the Qin wall remains. Later on, many successive dynasties built and maintained multiple stretches of border walls. The most well-known sections of the wall were built by the Ming dynasty (1368–1644). </p>`,
     points: [

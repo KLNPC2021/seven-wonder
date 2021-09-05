@@ -1,5 +1,13 @@
+window.resizeImg = function () {
+  const width = window.innerWidth * 0.6
+  document.getElementsByTagName('img')[0].setAttribute('width', width.toString())
+}
+
 window.addEventListener('DOMContentLoaded', () => {
   document.getElementById('date').valueAsDate = new Date()
+  window.resizeImg()
+
+  window.addEventListener('resize', resizeImg)
 
   this.getInfo = function (loc) {
     document.getElementById('points').innerHTML = ''

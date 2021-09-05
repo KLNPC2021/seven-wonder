@@ -4,7 +4,7 @@
 
 Created with vanilla Javascript { makes for a change ;) }, HTML5 and CSS3 (will run in IE10+), with super-simple tab interface for the different wonders  
 All information about the tabs (ie title, info, list of facts, link to [wikipedia](https://www.wikipedia.org) etc.) is in js/info.js
-Images courtesy of [worldatlas](https://www.worldatlas.com/articles/the-7-wonders-of-the-world.html), favicon of [favicon-generator](https://www.favicon-generator.org/search/---/7), and information of [wikipedia](https://www.wikipedia.org)
+Images courtesy of [worldatlas](https://www.worldatlas.com/articles/the-7-wonders-of-the-world.html) and [wikimedia commons](https://commons.wikimedia.org/wiki/Category:Images), favicon of [favicon-generator](https://www.favicon-generator.org/search/---/7), and information of [wikipedia](https://www.wikipedia.org)
 
 
 ## file layout
@@ -23,4 +23,4 @@ Images courtesy of [worldatlas](https://www.worldatlas.com/articles/the-7-wonder
 ```
 ---
 
-<div style="float: right">&lt;/&gt;'d with ❤️ by lewardo 🚀 2021</div>
+</> with ❤️ by lewardo 2021
