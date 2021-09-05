@@ -1,14 +1,25 @@
+window.initialise = function () {
+  document.getElementById('date').valueAsDate = new Date()
+  window.getInfo('home')
+  window.resizeImg()
+}
+
 window.resizeImg = function () {
   const width = window.innerWidth * 0.6
   document.getElementsByTagName('img')[0].setAttribute('width', width.toString())
 }
 
+window.Element.prototype.reduceToNothing = function () {
+  const intervalId = setInterval(() => {
+    if(this.value.length == 0) clearInterval(intervalId)
+    else this.value = this.value.substr(0, this.value.length - 1)
+  }, 50)
+}
+
+window.addEventListener('resize', resizeImg, true)
+
 window.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('date').valueAsDate = new Date()
-  window.resizeImg()
-
-  window.addEventListener('resize', resizeImg)
-
+  // define all the functions used by inline script on the onclick and onload html attributes
   this.getInfo = function (loc) {
     document.getElementById('points').innerHTML = ''
   
@@ -23,22 +34,18 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   
     document.getElementsByTagName('img')[0].setAttribute("src", info[loc].img)
+
     document.getElementById('text').innerHTML = info[loc].info
+
     document.getElementById('wikilink').setAttribute("href", info[loc].moreinfo)
     document.getElementById('wikilink').innerText = info[loc].title
   }
 
-  this.reduceToNothing = function (el) {
-    const intervalId = setInterval(() => {
-      if(el.value.length == 0) clearInterval(intervalId)
-      else el.value = el.value.substr(0, el.value.length - 1)
-    }, 50)
-  }
-
   this.uploadAlumni = function () {
-    reduceToNothing(document.getElementById('story'))
-    reduceToNothing(document.getElementById('name'))
-    reduceToNothing(document.getElementById('surname'))
+    document.getElementById('story').reduceToNothing()
+    document.getElementById('name').reduceToNothing()
+    document.getElementById('surname').reduceToNothing()
+
     document.getElementById('date').valueAsDate = new Date()
 
     document.getElementById('experiencesubmit').setAttribute('value', "thanks for the story!")
